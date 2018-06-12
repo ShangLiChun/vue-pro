@@ -1,0 +1,87 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+    #app{
+        height: 100%;
+        .layout {
+          height: 100%;
+          .van-tabbar-item {
+            color: #000;
+          }
+          .navitem {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-decoration: none;
+            height: 40px;
+            color: #000;
+          }
+          .navitem.router-link-active {
+            color: #38f;
+          }
+          .van-nav-bar{
+            background-color: #38f;
+            color: #fff;
+            .van-icon,.van-nav-bar__text{
+              color: #fff;
+            }
+          }
+          .greenColor{
+            background-color: #31c27c;
+          }
+          .miusc_box{
+            .van-tab--active{
+              color:#31c27c;
+            }
+            .van-tabs__line {
+              background-color: #31c27c;
+            }
+          }
+        }
+        .van-tabs__content {
+          height: 100%;
+          overflow-y: auto;
+          .van-tab__pane{
+            height: 100%;
+          }
+        }
+        
+        .focus_wrapper{
+          .van-card{
+            height: 55px;
+            padding-left: 65px;
+            .van-card__thumb {
+              width: 40px !important;
+              height: 40px;
+              .van-card__content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .van-cell:not(:last-child)::after{
+                  left: 0;
+                }
+
+              }
+            }
+          }
+          .van-cell__title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+        } 
+        .historybox{
+          .van-cell__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .van-cell__label {
+              line-height: inherit;
+            }
+          }
+        }
+    }
+}
